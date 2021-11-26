@@ -40,10 +40,10 @@ namespace MCD_OOPNedir
 
             Console.WriteLine(musteriKontrol);
 
-            M2 = null;
-            M1 = null;
+            //M2 = null;
+            //M1 = null;
 
-            string isim = M2.isim;
+            //string isim = M2.isim;
 
             //Customer M3 = new Customer();
 
@@ -61,11 +61,15 @@ namespace MCD_OOPNedir
 
             Fruit meyve2 = new Fruit();
             meyve2.FruitName = "Bu bir Çilektir";
-            meyve2.MeyveRengi = "kırmızı";
+            meyve2.MeyveRengi = "pembe";
             meyve2.OlusturulmaTarihi = DateTime.Now;
 
-            Console.WriteLine(meyve1.FruitName);
-            Console.WriteLine(meyve1.MeyveRengi);
+            Console.WriteLine(meyve2.FruitName);
+            Console.WriteLine(meyve2.MeyveRengi);
+
+            Fruit meyve3 = new Fruit();
+            Console.WriteLine(meyve3.FruitName);
+            Console.WriteLine(meyve3.MeyveRengi);
 
 
             Console.ReadLine();
