@@ -23,8 +23,37 @@ namespace MCD_OOPNedir
 
             #endregion
 
+
+            //Musteri M1 = new Musteri();
+            Musteri M1 = new Musteri("122544013254", "Murat");
+            M1.TCKimlikNumara = "1225440152";
+            M1.isim = "Cengiz";
+            M1.soyisim = "Atilla";
+            M1.cinsiyet = 717770001;
+
+            Musteri M2 = M1;
+
+            M2.isim = "Murat";
+            M2.TCKimlikNumara = "12254401325";
+
+            bool musteriKontrol = M2.MusteriKontrol();
+
+            Console.WriteLine(musteriKontrol);
+
+            M2 = null;
+            M1 = null;
+
+            string isim = M2.isim;
+
+            //Customer M3 = new Customer();
+
             Console.ReadLine();
 
         }
     }
+
+    //class Customer
+    //{
+
+    //}
 }
