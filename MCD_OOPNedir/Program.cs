@@ -47,6 +47,27 @@ namespace MCD_OOPNedir
 
             //Customer M3 = new Customer();
 
+            //Classlardan nesne bu şekilde new kelimesi ile türetilir.
+
+            //So, a class is a template for objects, and an object is an instance of a class.
+
+            Fruit meyve1 = new Fruit();
+            meyve1.FruitName = "Bu bir Elmadır";
+            meyve1.MeyveRengi = "kırmızı";
+            meyve1.OlusturulmaTarihi = DateTime.Now;
+
+            Console.WriteLine(meyve1.FruitName);
+            Console.WriteLine(meyve1.MeyveRengi);
+
+            Fruit meyve2 = new Fruit();
+            meyve2.FruitName = "Bu bir Çilektir";
+            meyve2.MeyveRengi = "kırmızı";
+            meyve2.OlusturulmaTarihi = DateTime.Now;
+
+            Console.WriteLine(meyve1.FruitName);
+            Console.WriteLine(meyve1.MeyveRengi);
+
+
             Console.ReadLine();
 
         }
